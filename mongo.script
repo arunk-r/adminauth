@@ -1,0 +1,3 @@
+db.admins.insert({ name: {first: 'Root', last: 'Admin', full: 'Root Admin'}});
+var rootAdmin = db.admins.findOne();
+db.users.save({ username: 'root', isActive: 'yes', roles: {admin: rootAdmin._id} });

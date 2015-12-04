@@ -1,0 +1,5 @@
+/node_modules
+.tmp
+# IDE specific
+/nbproject
+/public/vendor

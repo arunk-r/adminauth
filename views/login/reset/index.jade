@@ -1,0 +1,21 @@
+extends ../../layout
+
+block content
+  div.row
+    div.col-sm-6
+      div.page-header
+        h1 Reset Your Password
+      div#reset
+
+    form(method='post')
+      div.form-group
+        label New Password:
+        input.form-control(type='password', name='password')
+        span.help-block
+      div.form-group
+        label Confirm Password:
+        input.form-control(type='password', name='confirm')
+        span.help-block
+      div.form-group
+        button.btn.btn-primary.btn-reset(type='submit') Set Password
+        a.btn.btn-link(href='/login/') Back to Login

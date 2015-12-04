@@ -1,0 +1,17 @@
+extends ../../layout
+
+block content
+  div.row
+    div.col-sm-6
+      div.page-header
+        h1 Forgot Your Password?
+      div#forgot
+
+    form(method='post')
+      div.form-group
+        label Enter Your Email:
+        input.form-control(type='text', name='username')
+        span.help-block
+      div.form-group
+        button.btn.btn-primary.btn-forgot(type='submit') Send Reset
+        a.btn.btn-link(href='/login/') Back to Login
